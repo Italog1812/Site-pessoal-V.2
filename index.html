@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/296226f9e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+    <title>Site Pessoal - Ítalo Garcez Carvalho</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container-nav">
+        <input type="checkbox" id="menuToggle" />
+        <label for="menuToggle" class="menu-icon">
+          <i class="fa fa-book"></i>
+          <i class="fa fa-book-open"></i>
+        </label>
+        <nav class="nav menu1">
+          <a class="nav-link" href="#perfil">perfil</a>
+          <a class="nav-link" href="#projetos">projetos</a>
+          <a class="nav-link" href="#experiência">experiência</a>
+          <a class="nav-link" href="#repositorios">repositórios github</a>
+          <a class="nav-link" href="#conteudo">conteúdo</a>
+          <a class="nav-link" href="Páginapesquisa.html">Página de pesquisa</a>
+        </nav>
+      </div>
+      <div class="search">
+        <label for="search_bar" style="border-right: none">
+          <i class="fas fa-search"></i>
+        </label>
+        <input type="text" id="seach_bar" placeholder="Pesquisar" />
+        <label
+          for="search_bar"
+          style="
+            border-top-right-radius: 5px;
+            border-top-left-radius: 0px;
+            border-left: none;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 0px;
+          "
+        >
+          <i class="far fa-times-circle"></i>
+        </label>
+      </div>
+    </header>
+
+    <main class="main">
+      <section id="perfil" class="row perfil">
+        <div class="col-sm-12 col-md-4 col-lg-3">
+          <img
+            id="foto_perfil"
+            src="images/IMG_20210729_150409679_HDR (1).jpg"
+          />
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-5 infos">
+          <div class="perfil_infos">
+            <h2><b>Ítalo Garcez Carvalho </b></h2>
+            <h4 id="bio">
+              <b>Infos:</b>
+            </h4>
+          </div>
+          <div class="perfil_redes">
+            <h2><b>Redes Sociais</b></h2>
+            <div id="icons">
+              <i
+                class="fab fa-linkedin"
+                onclick="link('https://www.linkedin.com/in/%C3%ADtalo-garcez-carvalho/')"
+              ></i>
+              <i class="fab fa-twitter-square"></i>
+              <i
+                class="fab fa-youtube-square"
+                onclick="link('https://www.youtube.com/channel/UCuQ2qjqINaoAp-ilYYnQWWg')"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos" class="row projetos">
+        <div class="col-sm-12 col-md-10 col-lg-8 titulo_projetos">
+          <h1><b>Projetos</b></h1>
+
+          <select class="lista_projetos">
+            <option value="TODS">TODOS</option>
+            <option value="Web Sites">Web Sites</option>
+            <option value="Arte Gráfica">Arte Gráfica</option>
+            <option value="Podcast">Podcast</option>
+          </select>
+        </div>
+        <div class="col-sm-12 col-md-10 col-lg-8 conteudo_projetos">
+          <div class="col-sm-12 col-md-6 col-lg-3 projects_images">
+            <img src="images/1.jpg" />
+            <b>Projeto 1(Imagem meramente ilustrativa)</b>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 projects_images">
+            <img src="images/3.png" />
+            <b>Projeto 2(Imagem meramente ilustrativa)</b>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 projects_images">
+            <img src="images/4.jpg" />
+            <b>Projeto 3(Imagem meramente ilustrativa)</b>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 projects_images">
+            <img src="images/5.jpg" />
+            <b>Projeto 4(Imagem meramente ilustrativa)</b>
+          </div>
+        </div>
+        <div class="btn_projetos col-lg-8">
+          <button type="button" class="btn btn-secondary">
+            <i class="fas fa-plus"></i> Carregar Projetos
+          </button>
+        </div>
+      </section>
+
+      <section id="experiência" class="row experiência">
+        <div class="col-sm-12 col-md-10 col-lg-8">
+          <h1><b>Experiência</b></h1>
+        </div>
+        <div class="col-sm-12 col-md-10 col-lg-8 experiencia_imagens">
+          <div class="card mb-3" style="max-width: 100%">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="images/Logo-IFNMG-Campus-Almenara.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Curso técnico de informática integrado ao ensino médio.
+                  </h5>
+                  <p class="card-text">
+                    Ensino médio junto a um curso técnico em informática, a
+                    formação é direcionada para atividades de planejamento,
+                    implantação, organização e gerência de sistemas de
+                    informação, visando aplicações na produção de bens, serviços
+                    e conhecimentos.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">Período: 01/2016 a 12/2018</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 col-lg-8 experiencia_imagens">
+          <div class="card mb-3" style="max-width: 100%">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="images/Logo-Neothings.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Estágio voluntário</h5>
+                  <p class="card-text">
+                    Startup ná area de iot, atuando no time de programação
+                    backend.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted"
+                      >Período: 08/2021 até o momento</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-sm-12 col-md-10 col-lg-8 experiencia_imagens"
+          style="border-bottom: none"
+        >
+          <div class="card mb-3" style="max-width: 100%">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="images/Canal-no-youtube.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Canal no youtube</h5>
+                  <p class="card-text">
+                    Canal onde é possível encontrar diversos trabalhos
+                    desenvolvidos ao longo da graduação.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted"
+                      >Período: 2020 até o momento</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn_projetos col-lg-8">
+          <button type="button" class="btn btn-secondary" style="width: 235px">
+            <i class="fas fa-plus"></i> Carregar mais experiências
+          </button>
+        </div>
+      </section>
+
+      <section id="repositorios" class="row repositorios">
+        <div class="col-sm-12 col-md-10 col-lg-8">
+          <h1><b>Repositórios Github</b></h1>
+        </div>
+        <div id="folder" class="col-sm-12 col-md-10 col-lg-8 folders">
+          <div class="col-sm-12 col-md-12 col-lg-4 cartao">
+            <div class="col-sm-2 col-md-2 col-lg-3">
+              <div class="folders_imagem">
+                <i class="fas fa-folder"></i>
+              </div>
+            </div>
+            <div class="col-sm-10 col-md-10 col-lg-9 folders_texto">
+              <h1><b>Repositório A</b></h1>
+              <p>
+                <b>Avaliação:</b>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+                nostrum illum repellat fuga quo deserunt voluptate nulla eius
+                perferendis repellendus?
+              </p>
+
+              <p><b>Atualizado em: 25/09/2021</b></p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-4 cartao">
+            <div class="col-sm-2 col-md-2 col-lg-3">
+              <div class="folders_imagem">
+                <i class="fas fa-folder"></i>
+              </div>
+            </div>
+            <div class="col-sm-10 col-md-10 col-lg-9 folders_texto">
+              <h1><b>Repositório B</b></h1>
+              <p>
+                <b>Avaliação:</b>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+                nostrum illum repellat fuga quo deserunt voluptate nulla eius
+                perferendis repellendus?
+              </p>
+
+              <p><b>Atualizado em: 25/09/2021</b></p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-4 cartao">
+            <div class="col-sm-2 col-md-2 col-lg-3">
+              <div class="folders_imagem">
+                <i class="fas fa-folder"></i>
+              </div>
+            </div>
+            <div class="col-sm-10 col-md-10 col-lg-9 folders_texto">
+              <h1><b>Repositório C</b></h1>
+              <p>
+                <b>Avaliação:</b>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+                nostrum illum repellat fuga quo deserunt voluptate nulla eius
+                perferendis repellendus?
+              </p>
+
+              <p><b>Atualizado em: 25/09/2021</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="btn_projetos col-lg-8">
+          <button type="button" class="btn btn-secondary" style="width: 232px">
+            <i class="fas fa-plus"></i> Carregar mais repositorios
+          </button>
+        </div>
+      </section>
+
+      <section id="conteudo" class="row conteudo">
+        <div class="col-sm-12 col-md-10 col-lg-8">
+          <h1><b>Recomendação de Conteúdo</b></h1>
+        </div>
+        <div
+          class="col-sm-12 col-md-8 col-lg-8 conteudo_videos"
+          style="border-bottom: solid 1px"
+        >
+          <div class="col-sm-12 col-md-10 col-lg-4 cartao">
+            <div class="col-12">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/eW4gZLxLZJo"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="col-12">
+              <h5>
+                <b>Vídeo:</b> Introdução e um pouco de prática com a linguagem
+                rust
+              </h5>
+              <p>
+                <b>Diretor:</b> Leonardo Augusto de Souza Filho
+                <b>Roteiro: </b> Ítalo Garcez Carvalho <b>Estreia: 2020</b>
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-10 col-lg-4 cartao">
+            <div class="col-12">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/quHp_PATAKo"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="col-12">
+              <h5>
+                <b>Vídeo:</b> Eletrônico Desenvolvido para Guardar
+                Automaticamente sua Casa
+              </h5>
+              <p>
+                <b>Diretor:</b> Leonardo Augusto de Souza Filho
+                <b>Roteiro: </b> Ítalo Garcez Carvalho <b>Estreia: 2020</b>
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-10 col-lg-4 cartao">
+            <div class="col-12">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/ZsqcMXY_ECk"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="col-12">
+              <h5>
+                <b>Vídeo:</b> Aprendizagem de Maquina - Modelagem Preditiva e
+                Descritiva.
+              </h5>
+              <p>
+                <b>Diretor:</b> Leonardo Augusto de Souza Filho
+                <b>Roteiro: </b> Ítalo Garcez Carvalho <b>Estreia: 2020</b>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="btn_projetos col-lg-8">
+          <button type="button" class="btn btn-secondary" style="width: 258px">
+            <i class="fas fa-plus"></i> Carregar mais recomendações
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="text_footer">
+        Copyright 2021 - Disciplina de Desenvolvimento de Interfaces Web -
+        <b>ICEI PUC MINAS</b>
+      </div>
+      <i class="fab fa-dev" style="font-size: 50px; color: rgb(2, 25, 68)"></i>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

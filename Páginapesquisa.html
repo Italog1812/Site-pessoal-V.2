@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/296226f9e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./pesquisa.js"></script>
+    <title>Site Pessoal - Ítalo Garcez Carvalho</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container-nav">
+        <input type="checkbox" id="menuToggle" />
+        <label for="menuToggle" class="menu-icon">
+          <i class="fa fa-book"></i>
+          <i class="fa fa-book-open"></i>
+        </label>
+        <nav class="nav menu1">
+          <a class="nav-link" href="index.html">Página de perfil</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="PagPesquisa" class="row PagPesquisa">
+        <div class="col-12 PesquisaGitHub">
+          <i class="fab fa-github icon-git-pesquisa"></i>
+          <div class="col-12 div-pesquisa">
+            <select
+              id="types-selection"
+              class="form-select form-select-sm caixa-selecao"
+              aria-label=".form-select-sm example"
+              onchange="changeValue()"
+            >
+              <option selected value="code">Code</option>
+              <option value="commits">Commits</option>
+              <option value="issues">Issues and pull requests</option>
+              <option value="labels">Labels</option>
+              <option value="repositories">Repositories</option>
+              <option value="topics">Topics</option>
+              <option value="users">Users</option>
+            </select>
+            <div id="BP" class="BarraPesquisa">
+              <input
+                id="text1"
+                style="width: 50%; height: 4.5vh"
+                type="text"
+                placeholder="Nome do código"
+              />
+              <input
+                id="text2"
+                style="width: 50%; height: 4.5vh"
+                type="text"
+                placeholder="Nome do usuário"
+              />
+            </div>
+            <button
+              type="button"
+              class="btn btn-dark botao-pesquisa"
+              onclick="CreateLink()"
+            >
+              Search
+            </button>
+          </div>
+          <div id="results-pesquisa"></div>
+          <i class="fas fa-thumbs-up" style="font-size: 2vh">
+            Obrigado pela preferência.</i
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="footer-pesquisa">
+      <div class="text_footer">
+        Copyright 2021 - Disciplina de Desenvolvimento de Interfaces Web -
+        <b>ICEI PUC MINAS</b>
+      </div>
+      <i class="fab fa-dev" style="font-size: 50px; color: rgb(2, 25, 68)"></i>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
